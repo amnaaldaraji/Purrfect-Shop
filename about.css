@@ -1,0 +1,162 @@
+/* About hero section */
+.about-hero {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    background: white;
+    border-radius: 22px;
+    padding: 36px;
+    margin-bottom: 28px;
+    box-shadow: 0 4px 24px rgba(160, 60, 100, 0.07);
+    border: 1px solid #f5e0e8;
+}
+
+.about-photo-wrap {
+    flex-shrink: 0;
+}
+
+.owner-photo {
+    width: 360px;
+    height: auto;
+    border-radius: 16px;
+    display: block;
+    object-fit: cover;
+}
+
+.about-intro {
+    flex: 1;
+    min-width: 0;
+}
+
+.about-intro h1 {
+    font-size: 2.4rem;
+    color: #9a3f5e;
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: 6px;
+    line-height: 1.2;
+}
+
+.about-tagline {
+    font-size: 1rem;
+    color: #b08090;
+    font-weight: 300;
+    letter-spacing: 0.4px;
+    margin-bottom: 18px;
+}
+
+.owner-text {
+    font-size: 1.08rem;
+    color: #6a3858;
+    line-height: 1.9;
+    font-weight: 300;
+    margin-bottom: 22px;
+}
+
+.contact-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.contact-pills span {
+    background: #fce8f0;
+    color: #9a3f5e;
+    padding: 7px 16px;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    font-weight: 400;
+}
+
+/* About sections */
+.about-section {
+    background: white;
+    border-radius: 22px;
+    padding: 32px 36px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 24px rgba(160, 60, 100, 0.07);
+    border: 1px solid #f5e0e8;
+}
+
+.about-section h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.7rem;
+    font-style: italic;
+    font-weight: 500;
+    color: #9a3f5e;
+    margin-bottom: 22px;
+}
+
+/* Cat photos */
+.my-cats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-bottom: 10px;
+}
+
+.my-cat-card {
+    background: #fdf6f9;
+    border: 1px solid #f0dde6;
+    border-radius: 16px;
+    overflow: hidden;
+    margin: 0;
+}
+
+.my-cat-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 500px) {
+    .my-cats {
+        grid-template-columns: 1fr;
+    }
+}
+
+.my-cat-card figcaption {
+    padding: 12px 14px;
+    font-size: 1rem;
+    color: #9a3f5e;
+    text-align: center;
+    font-style: italic;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+}
+
+/* Map */
+.map-box {
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid #f0dde6;
+}
+
+@media (max-width: 700px) {
+    .about-hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 24px;
+    }
+
+    .owner-photo {
+        width: 160px;
+    }
+
+    .contact-pills {
+        justify-content: center;
+    }
+
+    .about-intro h1 {
+        font-size: 1.9rem;
+    }
+
+    .about-section {
+        padding: 24px 20px;
+    }
+
+    .my-cat-card {
+        max-width: 100%;
+    }
+}
