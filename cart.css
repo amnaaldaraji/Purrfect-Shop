@@ -1,0 +1,138 @@
+#cart h2 {
+    color: #9a3f5e;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+.cart-item {
+    background: white;
+    border: 1px solid #f5e0e8;
+    border-radius: 14px;
+    padding: 14px 20px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    box-shadow: 0 2px 10px rgba(160, 60, 100, 0.05);
+}
+
+.cart-item-img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.cart-item-no-img {
+    width: 90px;
+    height: 90px;
+    background: #fdf0f4;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #c4a0b4;
+    font-size: 0.75rem;
+    flex-shrink: 0;
+}
+
+.cart-item-info {
+    flex: 1;
+}
+
+.cart-item-info h4 {
+    color: #9a3f5e;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0 0 3px 0;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+}
+
+.cart-item-origin {
+    color: #a0527a;
+    font-size: 0.82rem;
+    font-weight: 400;
+    margin: 0 0 4px 0;
+}
+
+.cart-item-detail {
+    color: #b08090;
+    font-size: 0.78rem;
+    font-weight: 300;
+    margin: 0 0 2px 0;
+}
+
+.cart-item > button {
+    background: transparent;
+    color: #c4607c;
+    border: 1px solid #f0dde6;
+    padding: 5px 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.8rem;
+    transition: all 0.15s;
+    align-self: flex-start;
+    margin-left: auto;
+    flex-shrink: 0;
+}
+
+.cart-item button:hover {
+    background: #c4607c;
+    color: white;
+    border-color: #c4607c;
+}
+
+.empty-cart {
+    text-align: center;
+    color: #c4a0b4;
+    padding: 80px 20px;
+    font-style: italic;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+}
+
+#orderForm {
+    background: white;
+    border: 1px solid #f5e0e8;
+    border-radius: 20px;
+    padding: 32px;
+    margin-top: 24px;
+    max-width: 440px;
+    box-shadow: 0 4px 20px rgba(160, 60, 100, 0.07);
+}
+
+#orderForm h3 {
+    color: #9a3f5e;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    font-style: italic;
+    font-weight: 500;
+}
+
+#orderForm input {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 12px;
+    border: 1px solid #f0dde6;
+    border-radius: 30px;
+    font-size: 0.88rem;
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    outline: none;
+    color: #3d1f35;
+    background: #fdf8fa;
+}
+
+#orderForm input::placeholder {
+    color: #c8a8b8;
+}
+
+#orderForm input:focus {
+    border-color: #c4607c;
+}
