@@ -14,7 +14,6 @@ body {
     font-family: 'Jost', sans-serif;
     font-weight: 300;
     background: linear-gradient(160deg, #fff5f8 0%, #fdf0ff 60%, #fff5f8 100%);
-    background-attachment: fixed;
     min-height: 100vh;
     color: #3d1f35;
 }
