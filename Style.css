@@ -71,6 +71,7 @@ nav {
     color: #9a3f5e;
     transition: all 0.15s;
     letter-spacing: 0.3px;
+    text-decoration: none;
 }
 
 .nav-btn:hover {
