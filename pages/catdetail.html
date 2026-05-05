@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat — Purrfect Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/cats.css">
+</head>
+<body>
+
+    <header>
+        <a class="logo" href="../index.html">🐾 Purrfect Shop</a>
+        <nav>
+            <a href="../index.html" class="nav-btn">Home</a>
+            <a href="cats.html" class="nav-btn active">Cats</a>
+            <a href="about.html" class="nav-btn">About</a>
+            <a href="cart.html" class="nav-btn">Cart ♡ <span id="cartCount">0</span></a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page">
+            <a class="back-btn" href="cats.html">← Back to cats</a>
+            <div id="catDetailContent"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Purrfect Shop</p>
+    </footer>
+
+    <div class="music-player" id="musicPlayer">
+        <button class="music-toggle" id="musicToggle" onclick="toggleMusicWidget()">▼</button>
+        <div class="music-body" id="musicBody">
+            <div class="music-info">
+                <span class="music-title">ichiko aoba</span>
+                <span class="music-time" id="musicTime">0:00 / 0:00</span>
+            </div>
+            <div class="music-controls">
+                <button class="music-prev" onclick="seekBack()">◀◀</button>
+                <button class="music-playpause" id="musicBtn" onclick="toggleMusic()"></button>
+                <button class="music-next" onclick="seekForward()">▶▶</button>
+            </div>
+            <div class="music-progress-bg" onclick="seekToClick(event)">
+                <div class="music-progress-fill" id="musicProgress"></div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="bgMusic" loop>
+        <source src="../img/song.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="../js/shared.js"></script>
+    <script src="../js/music.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/catdetail.js"></script>
+</body>
+</html>

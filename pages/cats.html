@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cats — Purrfect Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/cats.css">
+</head>
+<body>
+
+    <header>
+        <a class="logo" href="../index.html">🐾 Purrfect Shop</a>
+        <nav>
+            <a href="../index.html" class="nav-btn">Home</a>
+            <a href="cats.html" class="nav-btn active">Cats</a>
+            <a href="about.html" class="nav-btn">About</a>
+            <a href="cart.html" class="nav-btn">Cart ♡ <span id="cartCount">0</span></a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="cats" class="page">
+            <h2>Our cats</h2>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search breed..." oninput="applyFilters()">
+            </div>
+            <div class="filter-section">
+                <div class="filter-row">
+                    <span class="filter-label">Lifespan</span>
+                    <div class="age-filter-row">
+                        <button class="age-btn active" onclick="setAgeFilter('all', this)">All</button>
+                        <button class="age-btn" onclick="setAgeFilter('short', this)">Under 12 yrs</button>
+                        <button class="age-btn" onclick="setAgeFilter('medium', this)">12–14 yrs</button>
+                        <button class="age-btn" onclick="setAgeFilter('long', this)">15+ yrs</button>
+                    </div>
+                </div>
+                <div class="filter-row">
+                    <span class="filter-label">Tags</span>
+                    <div id="tagFilters" class="tag-filter-row"></div>
+                </div>
+            </div>
+            <div id="catList" class="cat-grid"></div>
+            <div id="pagination" class="pagination"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Purrfect Shop</p>
+    </footer>
+
+    <div class="music-player" id="musicPlayer">
+        <button class="music-toggle" id="musicToggle" onclick="toggleMusicWidget()">▼</button>
+        <div class="music-body" id="musicBody">
+            <div class="music-info">
+                <span class="music-title">ichiko aoba</span>
+                <span class="music-time" id="musicTime">0:00 / 0:00</span>
+            </div>
+            <div class="music-controls">
+                <button class="music-prev" onclick="seekBack()">◀◀</button>
+                <button class="music-playpause" id="musicBtn" onclick="toggleMusic()"></button>
+                <button class="music-next" onclick="seekForward()">▶▶</button>
+            </div>
+            <div class="music-progress-bg" onclick="seekToClick(event)">
+                <div class="music-progress-fill" id="musicProgress"></div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="bgMusic" loop>
+        <source src="../img/song.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="../js/shared.js"></script>
+    <script src="../js/music.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/cats.js"></script>
+</body>
+</html>
